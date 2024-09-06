@@ -4,7 +4,7 @@
 		"annotations": [],
 		"type": "AzureKeyVault",
 		"typeProperties": {
-			"baseUrl": "https://stagecduvault.vault.azure.net/"
+			"baseUrl": "https://stage-cdu-vault.vault.azure.net/"
 		}
 	}
 }
