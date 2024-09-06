@@ -1,0 +1,19 @@
+{
+	"name": "ls_adlscdudev",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://adlscdudev.dfs.core.windows.net/",
+			"accountKey": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "ls_stageKeyVault",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "adlscdudev"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/linkedservices"
+}

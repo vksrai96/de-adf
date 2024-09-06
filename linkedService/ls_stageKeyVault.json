@@ -1,0 +1,10 @@
+{
+	"name": "ls_stageKeyVault",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://stage-cdu-vault.vault.azure.net/"
+		}
+	}
+}
