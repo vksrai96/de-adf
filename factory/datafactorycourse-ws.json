@@ -1,0 +1,9 @@
+{
+	"name": "datafactorycourse-ws",
+	"location": "germanywestcentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "d87c52d1-dca9-4e63-a58b-a3d7dbd44d02",
+		"tenantId": "33b4e7a4-63fc-4a86-bf05-57dc9c183a6f"
+	}
+}
