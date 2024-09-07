@@ -1,9 +1,9 @@
 {
-	"name": "pl_002_CopyEntireFolder",
+	"name": "pl_004_CopydatafromADLStoSQLDB",
 	"properties": {
 		"activities": [
 			{
-				"name": "CopyEntireFolder",
+				"name": "CopydatafromADLStoSQLDB",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -20,7 +20,6 @@
 						"storeSettings": {
 							"type": "AzureBlobFSReadSettings",
 							"recursive": true,
-							"wildcardFileName": "*.*",
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
@@ -28,15 +27,11 @@
 						}
 					},
 					"sink": {
-						"type": "DelimitedTextSink",
-						"storeSettings": {
-							"type": "AzureBlobFSWriteSettings"
-						},
-						"formatSettings": {
-							"type": "DelimitedTextWriteSettings",
-							"quoteAllText": true,
-							"fileExtension": ".txt"
-						}
+						"type": "AzureSqlSink",
+						"writeBehavior": "insert",
+						"sqlWriterUseTableLock": false,
+						"tableOption": "autoCreate",
+						"disableMetricsCollection": false
 					},
 					"enableStaging": false,
 					"translator": {
@@ -50,13 +45,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "ds_CopyEntireFolder_SpecificFiles",
+						"referenceName": "ds_source_circuits_csv",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "ds_sink_circuits_csv",
+						"referenceName": "ds_cdu_db_cp_circuit_csv",
 						"type": "DatasetReference"
 					}
 				]

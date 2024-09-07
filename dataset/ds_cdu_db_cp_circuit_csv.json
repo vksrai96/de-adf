@@ -1,0 +1,16 @@
+{
+	"name": "ds_cdu_db_cp_circuit_csv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_asql",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "cricuits"
+		}
+	}
+}

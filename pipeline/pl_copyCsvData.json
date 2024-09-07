@@ -49,13 +49,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "circuits_csv",
+						"referenceName": "ds_source_circuits_csv",
 						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
-						"referenceName": "ds_circuits_csv",
+						"referenceName": "ds_sink_circuits_csv",
 						"type": "DatasetReference"
 					}
 				]
