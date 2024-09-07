@@ -1,5 +1,5 @@
 {
-	"name": "circuits_csv",
+	"name": "ds_source_circuits_csv",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ls_adlscdudev",
