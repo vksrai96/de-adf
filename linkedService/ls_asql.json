@@ -1,0 +1,23 @@
+{
+	"name": "ls_asql",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "cdu.database.windows.net",
+			"database": "cdudb",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "cduadmin",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "ls_stageKeyVault",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "cduasqldb"
+			}
+		}
+	}
+}
