@@ -1,5 +1,5 @@
 {
-	"name": "ds_sink_circuits_csv",
+	"name": "ds_source_year_csv",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ls_adlscdudev",
@@ -10,14 +10,18 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "sq_circuit.csv",
-				"fileSystem": "output"
+				"fileSystem": "yearwise"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
 		},
-		"schema": []
+		"schema": [
+			{
+				"name": "id",
+				"type": "String"
+			}
+		]
 	}
 }
