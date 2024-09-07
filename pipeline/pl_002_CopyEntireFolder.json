@@ -1,5 +1,5 @@
 {
-	"name": "pl_002_CopyEntireFolder_SpecificFiles",
+	"name": "pl_002_CopyEntireFolder",
 	"properties": {
 		"activities": [
 			{
@@ -20,7 +20,7 @@
 						"storeSettings": {
 							"type": "AzureBlobFSReadSettings",
 							"recursive": true,
-							"wildcardFileName": "*",
+							"wildcardFileName": "*.csv",
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
