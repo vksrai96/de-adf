@@ -10,7 +10,6 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "sq_circuit.csv",
 				"fileSystem": "output"
 			},
 			"columnDelimiter": ",",
