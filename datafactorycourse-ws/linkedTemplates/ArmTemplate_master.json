@@ -11,6 +11,18 @@
 			"type": "string",
 			"defaultValue": "https://adlscdudev.dfs.core.windows.net/"
 		},
+		"ls_asql_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "cdu.database.windows.net"
+		},
+		"ls_asql_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "cdudb"
+		},
+		"ls_asql_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "cduadmin"
+		},
 		"ls_stageKeyVault_properties_typeProperties_baseUrl": {
 			"type": "string",
 			"defaultValue": "https://stage-cdu-vault.vault.azure.net/"
@@ -47,6 +59,15 @@
 					},
 					"ls_adlscdudev_properties_typeProperties_url": {
 						"value": "[parameters('ls_adlscdudev_properties_typeProperties_url')]"
+					},
+					"ls_asql_properties_typeProperties_server": {
+						"value": "[parameters('ls_asql_properties_typeProperties_server')]"
+					},
+					"ls_asql_properties_typeProperties_database": {
+						"value": "[parameters('ls_asql_properties_typeProperties_database')]"
+					},
+					"ls_asql_properties_typeProperties_userName": {
+						"value": "[parameters('ls_asql_properties_typeProperties_userName')]"
 					}
 				}
 			},

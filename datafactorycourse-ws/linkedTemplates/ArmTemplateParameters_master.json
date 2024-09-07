@@ -8,6 +8,15 @@
 		"ls_adlscdudev_properties_typeProperties_url": {
 			"value": "https://adlscdudev.dfs.core.windows.net/"
 		},
+		"ls_asql_properties_typeProperties_server": {
+			"value": "cdu.database.windows.net"
+		},
+		"ls_asql_properties_typeProperties_database": {
+			"value": "cdudb"
+		},
+		"ls_asql_properties_typeProperties_userName": {
+			"value": "cduadmin"
+		},
 		"ls_stageKeyVault_properties_typeProperties_baseUrl": {
 			"value": "https://stage-cdu-vault.vault.azure.net/"
 		},
