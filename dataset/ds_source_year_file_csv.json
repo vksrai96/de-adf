@@ -15,6 +15,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().sourceFileName",
+					"type": "Expression"
+				},
 				"fileSystem": "yearwise"
 			},
 			"columnDelimiter": ",",
