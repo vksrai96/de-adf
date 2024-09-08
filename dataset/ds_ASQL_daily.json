@@ -1,0 +1,16 @@
+{
+	"name": "ds_ASQL_daily",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_asql",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "",
+			"table": "daily_circuts"
+		}
+	}
+}
