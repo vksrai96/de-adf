@@ -1,0 +1,21 @@
+{
+	"name": "ds_ASQL_tbl",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_asql",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"filename": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": ""
+		}
+	}
+}
