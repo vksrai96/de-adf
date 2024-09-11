@@ -48,6 +48,18 @@
 						"value": "@activity('toCheckFileExixtance').output.exists",
 						"type": "Expression"
 					},
+					"ifFalseActivities": [
+						{
+							"name": "fail if the file does not exist",
+							"type": "Fail",
+							"dependsOn": [],
+							"userProperties": [],
+							"typeProperties": {
+								"message": "Circuit file doesnt exist",
+								"errorCode": "10001"
+							}
+						}
+					],
 					"ifTrueActivities": [
 						{
 							"name": "Copy data",
@@ -75,9 +87,9 @@
 								},
 								"sink": {
 									"type": "AzureSqlSink",
+									"preCopyScript": "TRUNCATE TABLE dbo.circuits",
 									"writeBehavior": "insert",
 									"sqlWriterUseTableLock": false,
-									"tableOption": "autoCreate",
 									"disableMetricsCollection": false
 								},
 								"enableStaging": false,
