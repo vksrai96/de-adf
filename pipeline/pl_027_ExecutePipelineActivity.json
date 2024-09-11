@@ -1,0 +1,24 @@
+{
+	"name": "pl_027_ExecutePipelineActivity",
+	"properties": {
+		"activities": [
+			{
+				"name": "027_ExecutePipelineActivity",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"policy": {
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "pl_28_ExecutePipelineActivityWithparameter",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			}
+		],
+		"annotations": []
+	}
+}
