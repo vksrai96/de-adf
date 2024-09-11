@@ -1,0 +1,37 @@
+{
+	"name": "pl_020_FilterActivity",
+	"properties": {
+		"activities": [
+			{
+				"name": "020_FilterActivity",
+				"type": "Filter",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@pipeline().parameters.numbers",
+						"type": "Expression"
+					},
+					"condition": {
+						"value": "@equals(item(),5)",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"parameters": {
+			"numbers": {
+				"type": "array",
+				"defaultValue": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6
+				]
+			}
+		},
+		"annotations": []
+	}
+}

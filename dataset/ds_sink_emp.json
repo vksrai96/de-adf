@@ -1,5 +1,5 @@
 {
-	"name": "ds_cdu_db_cp_circuit_csv",
+	"name": "ds_sink_emp",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "ls_asql",
@@ -10,7 +10,7 @@
 		"schema": [],
 		"typeProperties": {
 			"schema": "dbo",
-			"table": "circuits"
+			"table": "EMPLOYEES"
 		}
 	}
 }

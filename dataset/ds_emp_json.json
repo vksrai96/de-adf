@@ -1,0 +1,19 @@
+{
+	"name": "ds_emp_json",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adlscdudev",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Employees .json",
+				"fileSystem": "empjsonfile"
+			}
+		},
+		"schema": {}
+	}
+}

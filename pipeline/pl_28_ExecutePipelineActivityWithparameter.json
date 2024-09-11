@@ -1,0 +1,36 @@
+{
+	"name": "pl_28_ExecutePipelineActivityWithparameter",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "y",
+					"value": {
+						"value": "@pipeline().parameters.x",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"parameters": {
+			"x": {
+				"type": "int",
+				"defaultValue": 10
+			}
+		},
+		"variables": {
+			"y": {
+				"type": "Integer"
+			}
+		},
+		"annotations": []
+	}
+}

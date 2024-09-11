@@ -1,0 +1,19 @@
+{
+	"name": "ds_source_CopyNestedJSONtoSQLDB",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adlscdudev",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "EmployeesNested.json",
+				"fileSystem": "empjsonfile"
+			}
+		},
+		"schema": {}
+	}
+}
