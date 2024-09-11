@@ -1,0 +1,31 @@
+{
+	"name": "ds_remove_header_csvfiles",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adlscdudev",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"Sourcefilename": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().Sourcefilename",
+					"type": "Expression"
+				},
+				"fileSystem": "yearwise"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
