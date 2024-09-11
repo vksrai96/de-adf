@@ -1,0 +1,16 @@
+{
+	"name": "ds_sql_query_output",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_asql",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "circuit_primary_id"
+		}
+	}
+}
