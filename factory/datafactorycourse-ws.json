@@ -2,7 +2,9 @@
 	"name": "datafactorycourse-ws",
 	"properties": {
 		"globalConfigurations": {
-			"PipelineBillingEnabled": "true"
+			"PipelineBillingEnabled": "true",
+			"factoryStagingLSReferenceName": "ls_adlscdudev",
+			"factoryStagingLSType": "LinkedServiceReference"
 		}
 	},
 	"location": "germanywestcentral",
